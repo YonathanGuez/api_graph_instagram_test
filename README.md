@@ -21,3 +21,5 @@ APP_SECRET="APP SECRET "
 ```
 yarn start
 ```
+for redirection
+"ngrok http localhost:3000"
