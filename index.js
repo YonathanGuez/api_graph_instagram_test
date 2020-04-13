@@ -10,7 +10,7 @@ const redirecturi = process.env.URI_REDIRECTION;
 const appsecret = process.env.APP_SECRET;
 
 const app = express();
-//midelleware
+//Midelleware
 const logger = (req, res, next) => {
   console.log(`${req.protocol}://${req.get("host")}${req.originalUrl}`);
   next();
@@ -24,7 +24,6 @@ app.use(express.urlencoded({ extended: false }));
 // GET home route
 app.get("/", (req, res) => {
   res.header("Content-type", "text/html");
-
   const authorize = `https://api.instagram.com/oauth/authorize?client_id=${appid}&redirect_uri=${redirecturi}&scope=user_profile&response_type=code`;
   return res.end(`<h1>connection </h1><a href=${authorize}>connect</a>`);
 });

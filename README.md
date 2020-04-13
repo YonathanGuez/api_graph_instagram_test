@@ -16,6 +16,8 @@ URI_REDIRECTION=https://localhost:3000/auth
 APP_SECRET="APP SECRET "
 
 ```
+Help for configuration .env:
+![](image/basic-display-resource.jpg)
 
 ## RUN:
 ```
